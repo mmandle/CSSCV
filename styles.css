@@ -85,7 +85,7 @@ footer a:hover{
     text-align: center;
     font-family: 'Inconsolata', monospace;
     font-family: 'Zilla Slab', serif;
-    background-image: url("/CVCSS/IMAGES/background.jpg");
+    background-image: url("background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
