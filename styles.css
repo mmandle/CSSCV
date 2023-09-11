@@ -27,7 +27,7 @@ body {
 .navbar .logo {
     position: absolute;
     top: 2%;
-    right: 93%;
+    right: 91%;
     transform: translate(-10%, -10%);
     color: white;
     margin-right: auto;
@@ -103,8 +103,8 @@ footer a:hover{
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 39.5%;
-    left: 41.75%;
+    top: 43%;
+    left: 39%;
     transform: translate(-10%, -10%);
 }
 
