@@ -1,0 +1,687 @@
+/*---------------BODY---------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Zilla Slab', serif;
+}
+/*---------------END-BODY--------------------*/
+
+/*---------------NAVBAR---------------------*/
+.navbar { 
+    margin: 0;
+    display: flex;
+    background-color: #010101;
+    justify-content: right;    
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Zilla Slab', serif;
+    border: dotted #41444b 1px;
+}
+
+.navbar .logo {
+    position: absolute;
+    top: 2%;
+    right: 93%;
+    transform: translate(-10%, -10%);
+    color: white;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.navbar .contact {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.navbar a:visited{
+    color: white;
+}
+
+.navbar a:hover{
+    color: #41444b;
+}
+/*--------------END-NAVBAR----------------------*/
+
+/*-----------------FOOTER-------------------*/
+footer {
+    background-color: #020202;
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Zilla Slab', serif;
+    border-top: #41444b solid 2px;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+    padding-right: 10px;
+}
+
+footer a:visited{
+    color: white;
+}
+
+footer a:hover{
+    color: #41444b
+}
+/*-------------END-FOOTER----------------------*/
+
+/*----------------SPLASH--------------------*/
+.splash {
+    color: white;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Zilla Slab', serif;
+    background-image: url("/CVCSS/IMAGES/background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.splash .bird {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30%;
+    left: 76.5%;
+    transform: translate(-10%, -10%);
+}
+
+.splash .among {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 39.5%;
+    left: 41.75%;
+    transform: translate(-10%, -10%);
+}
+
+.splashtext {
+   padding: 9% 0 25% 0;
+}
+
+.splash .welcometext {
+    background-image: url("/CVCSS/IMAGES/welcometextbox.webp");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 800;
+    -webkit-font-smoothing: antialised;
+}
+
+.splash .quote {
+    font-size: 15px;
+    color: #757575;
+}
+
+.splash .about {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    gap: 100px;
+    padding: 5% 5% 5% 5%;
+    text-align: left;
+}
+
+.splash .about .aboutme {
+    color: #757575;
+    font-size: 85px;
+    padding: 0 0 2% 0;
+}
+
+.splash .about .aboutpara {
+    border: solid #757575 3px;
+    font-size: 20px;
+    padding: 2%;
+}
+
+.splash .about .selfimage {
+    border: 5px #757575 solid;
+    width: 100%;
+    height: 100%;
+    align-items: left;
+}
+
+/*----------------END-SPLASH-------------------*/
+
+/*------------------CARD------------------*/
+/*--CARD STYLING--*/
+    .three-col {
+        background-color: #232323;
+        padding: 10% 1.5% 10% 2%;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        justify-items: center;
+        gap: 40px;
+    }
+/*--CARD STYLING--*/
+/*----START LANG---*/
+.LANG-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .LANG-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .LANG-card:hover .LANG-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .LANG-card-front, .LANG-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+    .LANG-card-front {
+        display: flex-inline;
+        background-color: black;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.75);
+        padding: 10px;
+        text-align: center;
+    }
+
+    .LANG-card-front img {
+        max-width: 100%;
+        height: 350px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .LANG-card-front p {
+        color: #757575;
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+    }
+
+  .LANG-card-back {
+    background-color: #121010;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 30px 10px 0 30px;
+    
+  }
+
+/*----END LANG---*/
+/*----START EXP---*/
+
+.SKILL-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .SKILL-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .SKILL-card:hover .SKILL-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .SKILL-card-front, .SKILL-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .SKILL-card-front {
+    display: flex-inline;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.75);
+    padding: 10px;
+    text-align: center;
+ }
+
+ .SKILL-card-front img {
+    max-width: 100%;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+
+ .SKILL-card-front p {
+    color: #757575;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+  
+  .SKILL-card-back {
+    background-color: #121010;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 70px 10px 0 10px;
+  }
+
+/*----END EXP---*/
+/*----START SKILL---*/
+
+.EXP-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .EXP-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .EXP-card:hover .EXP-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .EXP-card-front, .EXP-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .EXP-card-front {
+    display: flex-inline;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.75);
+    padding: 10px;
+    text-align: center;
+ }
+
+ .EXP-card-front img {
+    max-width: 100%;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+
+ .EXP-card-front p {
+    color: #757575;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+  
+  .EXP-card-back {
+    background-color: #121010;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+/*----END SKILL---*/
+/*---------------END-CARD--------------------*/
+
+/*--------------LANGUAGES----------------------*/
+
+.Languages {
+    color: white;
+    margin: 0;
+}
+
+.Languages .progress-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.Languages .progress-bars .progress-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.Languages .progress-bars .progress-bar .prog-title{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.Languages .progress-bars .progress-bar .progress-con{
+    display: flex;
+    align-items: center;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .prog-text{
+    color: greenyellow;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress{
+    width: 100%;
+    height: 0.45rem;
+    background-color: #232323;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: greenyellow;
+    transition: all 0.4s ease-in-out;
+    width: 0%;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress .java {
+    width: 65%;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress .c {
+    width: 35%;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress .cplus {
+    width: 20%;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress .csharp {
+    width: 10%;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress .css {
+    width: 35%;
+}
+
+.Languages .progress-bars .progress-bar .progress-con .progress .html {
+    width: 60%;
+}
+
+/*SKILLS WITHIN LANGUAGE SECTION*/
+
+.Skills .emoji-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.Skills .emoji-bars .emoji-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-title{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con{
+    display: flex;
+    align-items: center;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con .emoji-text{
+    color: greenyellow;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con .emoji{
+    width: 100%;
+    height: 0.45rem;
+    background-color: #232323;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con .emoji span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: greenyellow;
+    transition: all 0.4s ease-in-out;
+    width: 0%;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con .emoji .org {
+    width: 100%;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con .emoji .time {
+    width: 80%;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con .emoji .web {
+    width: 60%;
+}
+
+.Skills .emoji-bars .emoji-bar .emoji-con .emoji .app {
+    width: 40%;
+}
+
+/*-------------END-LANGUAGES----------------------*/
+
+/*--------------EXPERIENCES----------------------*/
+.Experiences {
+    background-color: #121010;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.Experiences .experiences-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 40%;
+    height: 1px;
+    background-color: red;
+    transform: translateX(-50%);
+}
+
+.Experiences .timeline {
+    display: grid;
+    grid-gap: rem;
+    padding-bottom: 1rem;
+}
+
+.Experiences .timeline .timeline-item .tl-duration {
+    padding: 0.3rem 0.5rem;
+    background-color: black;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.Experiences .timeline .timeline-item h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.Experiences .timeline .timeline-item a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+    padding-right: 10px;
+}
+
+.Experiences .timeline .timeline-item a:visited{
+    color: white;
+}
+
+.Experiences .timeline .timeline-item a:hover{
+    color: #41444b;
+}
+
+/*-------------END-EXPERIENCES----------------------*/
+
+/*--------------HORIZONTALRULE--------------*/
+
+.horizontal-rule {
+    margin: 0;
+    border: 1px solid #41444b;
+}
+
+/*--------CONACT SECTION STYLES--------*/
+
+.About-contact {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.About-contact a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+    padding-right: 10px;
+}
+
+.About-contact a:visited {
+    color: white;
+}
+
+.About-contact a:hover {
+    color: #41444b;
+}
+
+/*--------END-NAV--------*/
+
+/*--------footie--------*/
+
+.footie-contact {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.footie-contact a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+    padding-right: 10px;
+}
+
+.footie-contact a:visited {
+    color: white;
+}
+ 
+.footie-contact a:hover {
+    color: #41444b;
+}
+
+/*--------END-footie--------*/
+
+/*--------CONTACT-CONTAINER--------*/
+
+.contact-container {
+    background-color: #232323;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0 3rem 0;
+}
+
+.contact-container .main-title {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container .contact-info {
+    font-size: 20px;
+}
+
+.contact-container .contact-form .input-control input, .contact-container .contact-form .input-control textarea {
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: #41444b;
+    width: 50%;
+    color: white;
+    resize: none;
+    margin: 1%;
+}
+
+.contact-container .contact-form .submit-btn {
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    text-shadow: none;
+    border: none;
+    background: #41444b;
+    width: 25%;
+    color: white;
+    resize: none;
+    margin: 1% 0 0 35%;
+    transition: color 0.3s;
+}
+
+.contact-container .contact-form .submit-btn:hover {
+    background-color: black;
+}
+
+/*--------END-CONTACT-CONTAINER--------*/
+
+/*--------HORIZONTAL-RULE--------*/
+
+.horizontal-rule-contact {
+    border: 1px solid black;
+    margin: 40px 250px;
+}
+
+/*--------END-HORIZONTAL-RULE--------*/
